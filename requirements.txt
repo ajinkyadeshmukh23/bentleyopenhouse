@@ -2,3 +2,4 @@ pandas
 streamlit
 geopy
 better_profanity
+Pillow
