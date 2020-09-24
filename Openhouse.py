@@ -2,8 +2,8 @@ import pandas as pd
 import streamlit as st
 from geopy.geocoders import Nominatim
 from PIL import Image
-# from streamlit_folium import folium_static
-# import folium as folium
+from streamlit_folium import folium_static
+import folium as folium
 from better_profanity import profanity
 
 if __name__ == "__main__":
@@ -60,23 +60,23 @@ if __name__ == "__main__":
             st.dataframe(dict)
 
         
-#             map2 = folium.Map(location=[48, -102], zoom_start=1)
+            map2 = folium.Map(location=[48, -102], zoom_start=1)
             
             
-#             for i in range(0,len(dict)):
-#                 icon_url = 'bentleymapmarker.png'
-#                 x = dict.iloc[i]['NP'].split('&&')
-#                 html= f''' '''
-#                 for j in x:
-#                     html = html + j + "<br>"
-#                 iframe = folium.IFrame(html = html, width=200, height=70)
-#                 pop = folium.Popup(iframe)
-#                 iconx = folium.features.CustomIcon(icon_url,icon_size=(25, 30))
-#                 folium.Marker([dict.iloc[i]['Lat'], dict.iloc[i]['Lon']], popup= pop , icon = iconx, width=1200, height=500).add_to(map2)
+            for i in range(0,len(dict)):
+                icon_url = 'bentleymapmarker.png'
+                x = dict.iloc[i]['NP'].split('&&')
+                html= f''' '''
+                for j in x:
+                    html = html + j + "<br>"
+                iframe = folium.IFrame(html = html, width=200, height=70)
+                pop = folium.Popup(iframe)
+                iconx = folium.features.CustomIcon(icon_url,icon_size=(25, 30))
+                folium.Marker([dict.iloc[i]['Lat'], dict.iloc[i]['Lon']], popup= pop , icon = iconx, width=1200, height=500).add_to(map2)
 #             
 #             # df.apply(lambda row:folium.Marker(location=[row["Lat"], row["Lon"]], icon= iconx).add_to(map2), axis=1)
 #             
-#             folium_static(map2)
+            folium_static(map2)
         
         else:
             pass
