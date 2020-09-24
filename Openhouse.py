@@ -46,7 +46,7 @@ if __name__ == "__main__":
         l7 = df['Country'].tolist()
         l8 = df['NP'].tolist()
         if st.sidebar.button('Submit'):
-            if profanity.contains_profanity(name or phrase or city or zipcode) is False:
+            if profanity.contains_profanity(name and phrase and city and zipcode) is False:
                 l1.append(name)
                 l2.append(zipcode)
                 l3.append(city)
