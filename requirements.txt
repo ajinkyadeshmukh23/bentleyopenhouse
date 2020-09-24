@@ -3,3 +3,4 @@ streamlit
 geopy
 better_profanity
 Pillow
+folium
