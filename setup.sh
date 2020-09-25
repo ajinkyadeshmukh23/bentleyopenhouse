@@ -8,4 +8,8 @@ echo "\
 headless = true\n\
 enableCORS=false\n\
 port = $PORT\n\
+[deprecation]
+showPyplotGlobalUse = False
 " > ~/.streamlit/config.toml
+[deprecation]
+showPyplotGlobalUse = False
