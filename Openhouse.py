@@ -91,27 +91,27 @@ if __name__ == "__main__":
     folium_static(map2)
     
     #PLOT
-    st.set_option('deprecation.showPyplotGlobalUse', False)
-    df2 = pd.read_csv(datafile)
-    s = df2['Phrase']
-    sizes = []
-    for i in choices:
-        sizes.append(sum(s.str.count(i)))
-#     st.text(sizes)
-    colors = ['#ff9999','#66b3ff','#99ff99','#ffcc99']
+#     st.set_option('deprecation.showPyplotGlobalUse', False)
+#     df2 = pd.read_csv(datafile)
+#     s = df2['Phrase']
+#     sizes = []
+#     for i in choices:
+#         sizes.append(sum(s.str.count(i)))
+# #     st.text(sizes)
+#     colors = ['#ff9999','#66b3ff','#99ff99','#ffcc99']
     
-    fig1, ax1 = plt.subplots()
-    ax1.pie(sizes, autopct='%1.1f%%', startangle=90, pctdistance=1.1, labeldistance=1.2)
-    #draw circle
-    centre_circle = plt.Circle((0,0),0.70,fc='white')
-    fig = plt.gcf()
-    fig.gca().add_artist(centre_circle)
-    plt.legend(choices, loc= 'center', fontsize=7)
-    # Equal aspect ratio ensures that pie is drawn as a circle
-    ax1.axis('equal')  
-    plt.tight_layout()
-    plot = plt.show()
-    st.pyplot(fig1)
+#     fig1, ax1 = plt.subplots()
+#     ax1.pie(sizes, autopct='%1.1f%%', startangle=90, pctdistance=1.1, labeldistance=1.2)
+#     #draw circle
+#     centre_circle = plt.Circle((0,0),0.70,fc='white')
+#     fig = plt.gcf()
+#     fig.gca().add_artist(centre_circle)
+#     plt.legend(choices, loc= 'center', fontsize=7)
+#     # Equal aspect ratio ensures that pie is drawn as a circle
+#     ax1.axis('equal')  
+#     plt.tight_layout()
+#     plot = plt.show()
+#     st.pyplot(fig1)
     
     #LINKS
     link = '[Undergraduate Admission - Academic Preview Day | Bentley University](https://www.bentley.edu/undergraduate/academic-preview-day)'
