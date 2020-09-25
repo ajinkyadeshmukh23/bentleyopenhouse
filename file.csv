@@ -1,3 +1,2 @@
 Name,State,City,Phrase,Lat,Lon,Country,NP
-Ajinkya Deshmukh,440027,Nagpur,,21.1498134,79.0820556,India,Ajinkya Deshmukh says '' &&
-Ajinkya Deshmukh,440027,Nagpur,something,21.1498134,79.0820556,,Ajinkya Deshmukh says 'something' &&
+Ajinkya Deshmukh,,Nagpur,"['I want to be in the Boston area', 'Bentley has lots of clubs and organizations', 'Bentley offers study abroad', 'The campus is beautiful!', 'Bentley is the right size school for me', 'Bentley is #1 in Career Services', 'Bentley is a diverse campus', 'Bentley is a leader in business education']",21.1498134,79.0820556,India,Ajinkya Deshmukh &&
