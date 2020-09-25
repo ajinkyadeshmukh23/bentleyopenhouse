@@ -109,8 +109,7 @@ if __name__ == "__main__":
     # Equal aspect ratio ensures that pie is drawn as a circle
     ax1.axis('equal')  
     plt.tight_layout()
-    plot = plt.show()
-    st.pyplot(plot)
+    st.pyplot(fig1)
     
     #LINKS
     link = '[Undergraduate Admission - Academic Preview Day | Bentley University](https://www.bentley.edu/undergraduate/academic-preview-day)'
