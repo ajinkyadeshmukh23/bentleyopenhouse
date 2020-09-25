@@ -1,8 +1,0 @@
-pandas
-streamlit==0.67.1
-geopy
-better_profanity
-Pillow
-folium
-streamlit_folium
-matplotlib==3.3.1
