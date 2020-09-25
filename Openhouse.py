@@ -27,7 +27,7 @@ if __name__ == "__main__":
     #st.markdown("<h1 style='text-align: center; color: blue;'>Fill in the information on the form to the right and press the submit button</h1>", unsafe_allow_html=True)
     
     name = st.text_input("Name")
-    country = st.selectbox("Country", countries, index= 0)
+    country = st.selectbox("Country", countries, index= 243)
     if country == 'United States' :
         state_options = ["","Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]
         state = st.selectbox("State",state_options)
