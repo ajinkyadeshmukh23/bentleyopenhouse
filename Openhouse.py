@@ -73,7 +73,7 @@ if __name__ == "__main__":
 #                 st.dataframe(dict)
     #MAP
     st.header('See where the future Falcons :eagle: are from')
-    map2 = folium.Map(location=[48, -102], zoom_start=2)
+    map2 = folium.Map(location=[0, 0], zoom_start=2)
     
     
     for i in range(0,len(dict)):
@@ -96,8 +96,8 @@ if __name__ == "__main__":
     sizes = []
     for i in choices:
         sizes.append(sum(s.str.count(i)))
-    df3 = pd.DataFrame(data={"Why do students want to come to Bentley": choices,"Count" : sizes})
-    st.dataframe(df3)
+#     df3 = pd.DataFrame(data={"Why do students want to come to Bentley": choices,"Count" : sizes})
+#     st.dataframe(df3)
     
     fig1, ax1 = plt.subplots()
     ax1.pie(sizes, autopct='%1.1f%%', startangle=90, pctdistance=1.1, labeldistance=1.2)
