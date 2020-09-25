@@ -1,5 +1,4 @@
 pandas
-numpy
 streamlit
 geopy
 better_profanity
