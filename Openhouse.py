@@ -91,7 +91,6 @@ if __name__ == "__main__":
     folium_static(map2)
     
     #PLOT
-    st.set_option('deprecation.showPyplotGlobalUse', False)
     df2 = pd.read_csv(datafile)
     s = df2['Phrase']
     sizes = []
