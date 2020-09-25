@@ -109,7 +109,7 @@ if __name__ == "__main__":
     # Equal aspect ratio ensures that pie is drawn as a circle
     ax1.axis('equal')  
     plt.tight_layout()
-    plot = plt.show(fig)
+    plot = plt.show()
     st.pyplot(plot)
     
     #LINKS
