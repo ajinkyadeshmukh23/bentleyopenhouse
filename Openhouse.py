@@ -5,7 +5,7 @@ from PIL import Image
 from streamlit_folium import folium_static
 import folium as folium
 from better_profanity import profanity
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
     profanity.load_censor_words()
