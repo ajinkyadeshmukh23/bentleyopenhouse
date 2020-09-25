@@ -5,4 +5,3 @@ better_profanity
 Pillow
 folium
 streamlit_folium
-matplotlib
