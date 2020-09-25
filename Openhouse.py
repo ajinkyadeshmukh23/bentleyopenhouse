@@ -5,7 +5,7 @@ from PIL import Image
 from streamlit_folium import folium_static
 import folium as folium
 from better_profanity import profanity
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
     profanity.load_censor_words()
@@ -91,7 +91,6 @@ if __name__ == "__main__":
     folium_static(map2)
     
     #PLOT
-    st.set_option('deprecation.showPyplotGlobalUse', False)
     df2 = pd.read_csv(datafile)
     s = df2['Phrase']
     sizes = []
@@ -99,21 +98,19 @@ if __name__ == "__main__":
         sizes.append(sum(s.str.count(i)))
     df3 = pd.DataFrame(data={"Why do students want to come to Bentley": choices,"Count" : sizes})
     st.dataframe(df3)
-#     st.text(sizes)
-#     colors = ['#ff9999','#66b3ff','#99ff99','#ffcc99']
     
-#     fig1, ax1 = plt.subplots()
-#     ax1.pie(sizes, autopct='%1.1f%%', startangle=90, pctdistance=1.1, labeldistance=1.2)
-#     #draw circle
-#     centre_circle = plt.Circle((0,0),0.70,fc='white')
-#     fig = plt.gcf()
-#     fig.gca().add_artist(centre_circle)
-#     plt.legend(choices, loc= 'center', fontsize=7)
-#     # Equal aspect ratio ensures that pie is drawn as a circle
-#     ax1.axis('equal')  
-#     plt.tight_layout()
-#     plot = plt.show()
-#     st.pyplot()
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, autopct='%1.1f%%', startangle=90, pctdistance=1.1, labeldistance=1.2)
+    #draw circle
+    centre_circle = plt.Circle((0,0),0.70,fc='white')
+    fig = plt.gcf()
+    fig.gca().add_artist(centre_circle)
+    plt.legend(choices, loc= 'center', fontsize=7)
+    # Equal aspect ratio ensures that pie is drawn as a circle
+    ax1.axis('equal')  
+    plt.tight_layout()
+    plot = plt.show()
+    st.pyplot(fig)
     
     #LINKS
     link = '[Undergraduate Admission - Academic Preview Day | Bentley University](https://www.bentley.edu/undergraduate/academic-preview-day)'
