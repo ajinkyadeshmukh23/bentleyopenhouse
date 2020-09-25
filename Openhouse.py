@@ -73,7 +73,7 @@ if __name__ == "__main__":
 #                 st.dataframe(dict)
     #MAP
     st.header('See where the future Falcons :eagle: are from')
-    map2 = folium.Map(location=[0, 0], zoom_start=2)
+    map2 = folium.Map(location=[0, 0], zoom_start=1)
     
     
     for i in range(0,len(dict)):
