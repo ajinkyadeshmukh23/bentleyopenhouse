@@ -6,5 +6,4 @@ Pillow
 folium
 streamlit_folium
 matplotlib
-base64
 PyGithub
